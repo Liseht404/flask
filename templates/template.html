@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/cabecera-styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/pie-pagina-styles.css')}}">
+      <title>{% block title %} Template {% endblock %}</title>
 </head>
+
 <body>
-    <header></header>
+    <header>
+    
     <div class="contenedor-menu">
-        <h1> firts flask frontend</h1>
+        <h1>firts flask frontend</h1>
         <ul>
             <li>
-                <a href="{{url_for('home')}}">Inicio</a>
-               <li>
-               </li>
-               <a href="{{url_for('home')}}">producto </a>
-               <li>
-               </li>
-               <a href="{{url_for('home')}}">procedimiento</a>
-               <li>
-               </li>
-               <a href="{{url_for('home')}}">contactenos</a>
-               
-            
-    
+                <a href="{{url_for('home')}}">INICIO</a>
+                </li>
+                <li>
+
+                <a href="{{url_for('home')}}">PRODUCTO</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">SERVICIOS</a>  
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">CONTACTENOS</a>  
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <h1>&COPY;Liseth404</h1>
+    </footer>
+
+
+
+
+
+
+
 </body>
 </html>

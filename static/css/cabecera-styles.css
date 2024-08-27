@@ -1,0 +1,45 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+html{
+background-color: gray;
+
+}
+
+.contenedor-menu {
+    height: 200px;
+    width: 80%;
+    background-color: black;
+    margin: 0 auto;
+
+}
+
+.contenedor-menu h1{
+    color: white;
+    text-align: center;
+    text-shadow: 6px 6px 6px red;
+    line-height: 60px;
+
+}
+
+.contenedor-menu ul {
+display: flex;
+}
+
+.contenedor-menu ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.contenedor-menu ul li a{
+    text-decoration: none;
+}
+
+.contenedor-menu ul li a:hover{
+    font-size: 28px;
+    color: purple;
+    background-color: pink;
+}
